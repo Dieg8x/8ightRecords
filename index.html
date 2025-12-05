@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" class="theme-pink">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dieg8x – Official Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dieg8x · DJ, productor y cantante de reggaetón, house, techno y trap. Música, sets, The Eight Sessions y 8ight Records." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dieg8x – Official Site">
+  <meta property="og:description" content="Reggaetón oscuro, house y techno con vibra nocturna. Entra al universo de Dieg8x.">
+  <meta property="og:type" content="website">
+  <!-- Cambia esta URL cuando tengas dominio -->
+  <meta property="og:url" content="https://tusitio.com/">
+  <meta property="og:image" content="https://tusitio.com/img/diosa-cover.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dieg8x – Official Site">
+  <meta name="twitter:description" content="Reggaetón oscuro, house y techno con vibra nocturna.">
+  <meta name="twitter:image" content="https://tusitio.com/img/diosa-cover.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Splash / Loader -->
+  <div class="splash">
+    <div class="splash-inner">
+      <div class="splash-spinner"></div>
+      <div class="splash-logo">Dieg8x</div>
+      <div class="splash-sub">Loading 8ight Records...</div>
+    </div>
+  </div>
+  <!-- NAV -->
+  ...
+
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <header class="hero">
+      <div class="hero-bg-glow"></div>
+
+      <div class="hero-main fade-in-up">
+        <h3>Ciudad de México · DJ / Productor</h3>
+        <h1>Dieg8x</h1>
+        <p class="hero-tagline">
+          Reggaetón, house, techno y trap con vibra oscura y romántica.  
+          Música para la pista, para stories a las 3 a.m. y para todo lo que pasa entre un “ya llegué” y un “última rola”.
+        </p>
+
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Sets y lanzamientos originales
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Fundador de 8ight Records
+          </div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            The Eight Sessions Vol. 1 pronto
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://open.spotify.com/intl-es/artist/3rmaK40sMT4b1tKgIkOOgF" target="_blank" rel="noreferrer">
+            Escuchar en Spotify
+          </a>
+          <a class="btn btn-secondary" href="music.html">
+            Ver lanzamientos
+          </a>
+        </div>
+
+        <div class="hero-note">
+          Disponible también en Apple Music, YouTube, SoundCloud y más.
+        </div>
+      </div>
+
+      <aside class="hero-side-card fade-in-up">
+        <div class="hero-side-header">
+          <span>Now playing</span>
+          <span class="pill">Single destacado</span>
+        </div>
+
+        <div>
+          <div class="hero-track">
+            <div class="hero-cover">
+              <!-- portada DIOSA -->
+              <img src="img/diosa-cover.jpg" alt="Portada DIOSA – Dieg8x">
+            </div>
+            <div class="hero-track-info">
+              <strong>“DIOSA”</strong>
+              <p>Reggaetón romántico, oscuro y pegadizo. Un tema para dedicar… o para recordar.</p>
+            </div>
+          </div>
+          <div class="hero-progress-bar">
+            <div class="hero-progress-fill"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.7rem;color:var(--text-muted);">
+            <span>01:12</span>
+            <span>03:24</span>
+          </div>
+        </div>
+
+        <div class="hero-side-footer">
+          <div>Escúchalo en:</div>
+          <div class="hero-platforms">
+            <a class="platform-pill" href="https://open.spotify.com/intl-es/artist/3rmaK40sMT4b1tKgIkOOgF" target="_blank" rel="noreferrer">Spotify</a>
+            <a class="platform-pill" href="https://music.apple.com/mx/artist/dieg8x/1643347066" target="_blank" rel="noreferrer">Apple Music</a>
+            <a class="platform-pill" href="https://www.youtube.com/@Dieg8x" target="_blank" rel="noreferrer">YouTube</a>
+          </div>
+        </div>
+      </aside>
+    </header>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+
+    // Quitar splash después de carga
+    window.addEventListener("load", () => {
+      const splash = document.querySelector(".splash");
+      if (splash) {
+        setTimeout(() => { splash.style.display = "none"; }, 2300);
+      }
+       document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+
+    // Quitar splash después de carga
+    window.addEventListener("load", () => {
+      const splash = document.querySelector(".splash");
+      if (splash) {
+        setTimeout(() => { splash.style.display = "none"; }, 2300);
+      }
+    });
+
+    // ===== MODO NEÓN AUTOMÁTICO EN HOME =====
+    const neonThemes = ["theme-pink", "theme-blue", "theme-purple", "theme-red"];
+    let neonIndex = 0;
+
+    function applyNeonTheme() {
+      const root = document.documentElement;
+      root.classList.remove(...neonThemes);
+      root.classList.add(neonThemes[neonIndex]);
+    }
+
+    // arranque
+    applyNeonTheme();
+
+    // rotar cada 10s
+    setInterval(() => {
+      neonIndex = (neonIndex + 1) % neonThemes.length;
+      applyNeonTheme();
+    }, 10000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Eight Sessions – Dieg8x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Eight Sessions Vol. 1: concepto de sesiones en rooftop curado por Dieg8x.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="section-alt fade-in-up">
+      <h3 class="section-eyebrow">Proyecto</h3>
+      <h1 class="page-title">The Eight Sessions · Vol. 1</h1>
+      <p class="section-intro">
+        Un proyecto de sesiones en vivo curado por Dieg8x, grabado en rooftop y pensado para
+        capturar la energía de la ciudad desde las alturas.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <p>
+            Cada sesión invita a un artista con una propuesta sólida en club music:  
+            desde techno y house hasta reggaetón oscuro y fusión urbana-electrónica.
+          </p>
+          <p>
+            La temporada Vol. 1 se grabará en un rooftop, con duración aproximada de
+            <strong>1:00 a 1:30 horas por artista</strong>, cuidando tanto el audio como el aspecto visual.
+          </p>
+          <p>
+            Más que solo sets, <strong>The Eight Sessions</strong> busca crear un archivo visual y sonoro
+            de la escena actual: artistas reales, ciudad real, música en su estado más puro.
+          </p>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-tag">Temporada 1</div>
+            <div class="card-title">Artistas confirmados</div>
+            <p>
+              · <strong>Roch</strong> – Techno<br>
+              · <strong>Dieg8x</strong> – Reggaetón / Urban House<br>
+              · <strong>Ribeuu</strong> – Techno
+            </p>
+            <p style="margin-top:8px;">
+              Fechas y horarios se anunciarán en redes sociales
+              y a través del canal oficial de:
+            </p>
+            <p style="margin-top:6px;">
+              <a href="https://www.youtube.com/@8ightRecords" target="_blank">YouTube · 8ight Records</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-grid" style="margin-top:26px;">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_SESION" title="The Eight Sessions · Trailer" allowfullscreen></iframe>
+          <div class="video-caption">
+            Trailer o teaser del proyecto (cuando esté disponible).
+          </div>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_SESION2" title="Dieg8x – Live rooftop" allowfullscreen></iframe>
+          <div class="video-caption">
+            Espacio reservado para la sesión de Dieg8x dentro de The Eight Sessions.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(e => {
+      e.forEach(x => { if (x.isIntersecting) { x.target.classList.add("visible"); observer.unobserve(x.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

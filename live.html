@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dieg8x – Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fechas, shows y booking de Dieg8x.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="fade-in-up">
+      <h3 class="section-eyebrow">Live</h3>
+      <h1 class="page-title">Shows & bookings</h1>
+      <p class="section-intro">
+        Sets pensados para clubs, rooftops, fiestas privadas y formatos especiales.
+        Aquí encontrarás fechas confirmadas, tipos de shows y cómo llevar a Dieg8x a tu evento.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <div class="card">
+            <div class="card-tag">Formato</div>
+            <div class="card-title">DJ set · Reggaetón / House / Techno</div>
+            <p>
+              Set dinámico que mezcla reggaetón oscuro, urbano, house y techno.  
+              Ideal para clubes, fiestas y eventos donde la pista es la prioridad.
+            </p>
+            <p style="margin-top:8px;">
+              · Duración sugerida: 60–90 min.<br>
+              · Opciones de warm up, main set o cierre.<br>
+              · Se adapta al mood del venue y al público.
+            </p>
+          </div>
+
+          <div class="card" style="margin-top:16px;">
+            <div class="card-tag">Formato</div>
+            <div class="card-title">Live moments · The Eight Sessions</div>
+            <p>
+              Concepto audiovisual tipo rooftop / sesión grabada.  
+              Ideal para marcas, contenidos especiales, streamings o grabaciones en locaciones únicas.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-tag">Próximamente</div>
+            <div class="card-title">Próximas fechas</div>
+            <p>
+              Próximas fechas de <strong>The Eight Sessions Vol. 1</strong> y shows oficiales
+              se anunciarán en redes sociales y en este sitio.
+            </p>
+            <p style="margin-top:8px;">
+              Sigue las actualizaciones en:
+            </p>
+            <p style="margin-top:4px;">
+              · Instagram: <a href="https://www.instagram.com/dieg8x" target="_blank">@dieg8x</a><br>
+              · TikTok: <a href="https://www.tiktok.com/@dieg8x" target="_blank">@dieg8x</a><br>
+              · Linktree: <a href="https://linktr.ee/dieg8x" target="_blank">linktr.ee/dieg8x</a>
+            </p>
+          </div>
+
+          <div class="card" style="margin-top:16px;">
+            <div class="card-tag">Booking</div>
+            <div class="card-title">Reservar fecha</div>
+            <p>
+              Para cotizaciones, riders técnicos y disponibilidad, usa el formulario de
+              <a href="contact.html">Contacto</a> o escribe directamente a:
+            </p>
+            <p style="margin-top:6px;">
+              <strong>Mail:</strong> <a href="mailto:dieg8x@8ightRecords.com">dieg8x@8ightRecords.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(e => {
+      e.forEach(x => { if (x.isIntersecting) { x.target.classList.add("visible"); observer.unobserve(x.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dieg8x – Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Lanzamientos seleccionados de Dieg8x: DIOSA, A Escondidas, BBY IT’S TIME, U.H.P.M., CARA DE DIABLA y más.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="section-alt fade-in-up">
+      <h3 class="section-eyebrow">Music</h3>
+      <h1 class="page-title">Lanzamientos seleccionados</h1>
+      <p class="section-intro">
+        Música disponible en todas las plataformas digitales.  
+        Aquí algunos temas para empezar a conocer el universo de Dieg8x.
+      </p>
+
+      <!-- Audio player -->
+      <div class="audio-player" id="audio-player">
+        <div class="audio-player-main">
+          <div class="audio-cover">
+            <img src="img/diosa-cover.jpg" alt="Portada actual">
+          </div>
+          <div style="flex:1;">
+            <div class="audio-info-title" id="audio-title">DIOSA</div>
+            <div class="audio-info-sub" id="audio-sub">Single destacado</div>
+            <div class="audio-controls">
+              <button class="audio-btn" id="audio-prev">⏮</button>
+              <button class="audio-btn" id="audio-play">▶</button>
+              <button class="audio-btn" id="audio-next">⏭</button>
+              <div class="audio-timeline">
+                <div class="audio-progress" id="audio-progress"></div>
+              </div>
+              <div class="audio-time" id="audio-time">0:00</div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-track-list" id="audio-track-list"></div>
+        <audio id="audio-element"></audio>
+      </div>
+
+      <div class="card-grid">
+        <div class="card track-card" data-theme="pink" data-track="diosa">
+          <div class="card-cover">
+            <img src="img/diosa-cover.jpg" alt="Portada DIOSA – Dieg8x">
+          </div>
+          <div class="card-tag">Single · 2025</div>
+          <div class="card-title">DIOSA</div>
+          <p>
+            Reggaetón romántico con tintes oscuros.  
+            Una canción para quien nunca dices que extrañas, pero siempre estás stalkeando.
+          </p>
+          <div class="pill-soft">
+            <span class="pill-soft-dot"></span>
+            Ideal para: playlists de reggaetón chill y historias nocturnas.
+          </div>
+        </div>
+
+        <div class="card track-card" data-theme="blue" data-track="a-escondidas">
+          <div class="card-cover">
+            <img src="img/a-escondidas-cover.jpg" alt="Portada A Escondidas – Dieg8x">
+          </div>
+          <div class="card-tag">Single · 2025</div>
+          <div class="card-title">A Escondidas</div>
+          <p>
+            Sonido urbano para historias que no están en tu feed, pero sí en tu carrete.  
+            Vibra íntima, letra directa.
+          </p>
+        </div>
+
+        <div class="card track-card" data-theme="purple" data-track="bby-its-time">
+          <div class="card-cover">
+            <img src="img/bby-its-time-cover.jpg" alt="Portada BBY IT’S TIME – Dieg8x">
+          </div>
+          <div class="card-tag">Álbum · 2024</div>
+          <div class="card-title">BBY IT’S TIME</div>
+          <p>
+            Un recorrido completo por el sonido de Dieg8x: del club a la madrugada silenciosa.  
+            Pensado para escucharse de principio a fin.
+          </p>
+        </div>
+
+        <div class="card track-card" data-theme="red" data-track="cara-de-diabla">
+          <div class="card-cover">
+            <img src="img/cara-de-diabla-cover.jpg" alt="Portada CARA DE DIABLA – Dieg8x">
+          </div>
+          <div class="card-tag">Single · 2024</div>
+          <div class="card-title">CARA DE DIABLA</div>
+          <p>
+            Reggaetón intenso para la pista.  
+            Perfecto para ese momento donde la fiesta ya se salió de control “poquito”.
+          </p>
+        </div>
+
+        <div class="card track-card" data-theme="blue" data-track="uhpm">
+          <div class="card-cover">
+            <img src="img/uhpm-cover.jpg" alt="Portada U.H.P.M. – Dieg8x">
+          </div>
+          <div class="card-tag">Single · 2024</div>
+          <div class="card-title">U.H.P.M.</div>
+          <p>
+            Urbano con toques electrónicos y energía alta.  
+            Rola para road trips nocturnos y luces de ciudad.
+          </p>
+        </div>
+
+        <div class="card track-card" data-theme="purple" data-track="f8ck">
+          <div class="card-cover">
+            <img src="img/f8ck-cover.jpg" alt="Portada F8CK – Dieg8x &amp; Ribeuu">
+          </div>
+          <div class="card-tag">Collab</div>
+          <div class="card-title">F8CK (feat. Ribeuu)</div>
+          <p>
+            Colaboración explosiva para los que quieren algo más agresivo en la playlist.  
+            Club mode activado.
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-row" style="margin-top:24px;">
+        <a class="btn btn-primary" href="https://open.spotify.com/intl-es/artist/3rmaK40sMT4b1tKgIkOOgF" target="_blank" rel="noreferrer">Spotify</a>
+        <a class="btn btn-secondary" href="https://music.apple.com/mx/artist/dieg8x/1643347066" target="_blank" rel="noreferrer">Apple Music</a>
+        <a class="btn btn-secondary" href="https://www.youtube.com/@Dieg8x" target="_blank" rel="noreferrer">YouTube</a>
+        <a class="btn btn-secondary" href="https://soundcloud.com/dieg8x" target="_blank" rel="noreferrer">SoundCloud</a>
+        <a class="btn btn-secondary" href="https://linktr.ee/dieg8x" target="_blank" rel="noreferrer">Todos los links</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(e => {
+      e.forEach(x => { if (x.isIntersecting) { x.target.classList.add("visible"); observer.unobserve(x.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+
+    // ----- AUDIO PLAYER -----
+    const playlist = [
+      {
+        id: "diosa",
+        title: "DIOSA",
+        subtitle: "Single destacado",
+        cover: "img/diosa-cover.jpg",
+        src: "audio/diosa.mp3"
+      },
+      {
+        id: "a-escondidas",
+        title: "A Escondidas",
+        subtitle: "Single",
+        cover: "img/a-escondidas-cover.jpg",
+        src: "audio/a-escondidas.mp3"
+      },
+      {
+        id: "bby-its-time",
+        title: "BBY IT’S TIME",
+        subtitle: "Álbum",
+        cover: "img/bby-its-time-cover.jpg",
+        src: "audio/bby-its-time.mp3"
+      },
+      {
+        id: "cara-de-diabla",
+        title: "CARA DE DIABLA",
+        subtitle: "Single",
+        cover: "img/cara-de-diabla-cover.jpg",
+        src: "audio/cara-de-diabla.mp3"
+      },
+      {
+        id: "uhpm",
+        title: "U.H.P.M.",
+        subtitle: "Single",
+        cover: "img/uhpm-cover.jpg",
+        src: "audio/uhpm.mp3"
+      },
+      {
+        id: "f8ck",
+        title: "F8CK (feat. Ribeuu)",
+        subtitle: "Collab",
+        cover: "img/f8ck-cover.jpg",
+        src: "audio/f8ck.mp3"
+      }
+    ];
+
+    const audio = document.getElementById("audio-element");
+    const titleEl = document.getElementById("audio-title");
+    const subEl = document.getElementById("audio-sub");
+    const coverEl = document.querySelector(".audio-cover img");
+    const playBtn = document.getElementById("audio-play");
+    const prevBtn = document.getElementById("audio-prev");
+    const nextBtn = document.getElementById("audio-next");
+    const progressEl = document.getElementById("audio-progress");
+    const timeEl = document.getElementById("audio-time");
+    const listEl = document.getElementById("audio-track-list");
+
+    let currentIndex = 0;
+    let isPlaying = false;
+
+    function formatTime(sec) {
+      if (isNaN(sec)) return "0:00";
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60).toString().padStart(2, "0");
+      return `${m}:${s}`;
+    }
+
+    function loadTrack(index) {
+      const track = playlist[index];
+      if (!track) return;
+      currentIndex = index;
+      audio.src = track.src;
+      titleEl.textContent = track.title;
+      subEl.textContent = track.subtitle;
+      coverEl.src = track.cover;
+      document.querySelectorAll(".audio-track").forEach(t => t.classList.remove("is-active"));
+      const active = listEl.querySelector(`[data-id="${track.id}"]`);
+      if (active) active.classList.add("is-active");
+    }
+
+    function playPause() {
+      if (!audio.src) loadTrack(currentIndex);
+      if (isPlaying) audio.pause(); else audio.play();
+    }
+
+    audio.addEventListener("play", () => {
+      isPlaying = true;
+      playBtn.textContent = "⏸";
+    });
+
+    audio.addEventListener("pause", () => {
+      isPlaying = false;
+      playBtn.textContent = "▶";
+    });
+
+    audio.addEventListener("timeupdate", () => {
+      if (!audio.duration) return;
+      const ratio = audio.currentTime / audio.duration;
+      progressEl.style.width = `${ratio * 100}%`;
+      timeEl.textContent = formatTime(audio.currentTime);
+    });
+
+    audio.addEventListener("ended", () => {
+      nextTrack();
+    });
+
+    function prevTrack() {
+      currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+      loadTrack(currentIndex);
+      audio.play();
+    }
+
+    function nextTrack() {
+      currentIndex = (currentIndex + 1) % playlist.length;
+      loadTrack(currentIndex);
+      audio.play();
+    }
+
+    playBtn.addEventListener("click", playPause);
+    prevBtn.addEventListener("click", prevTrack);
+    nextBtn.addEventListener("click", nextTrack);
+
+    // Llenar lista
+    playlist.forEach((track, i) => {
+      const row = document.createElement("div");
+      row.className = "audio-track";
+      row.dataset.id = track.id;
+      row.innerHTML = `<span>${track.title}</span><span>${track.subtitle}</span>`;
+      row.addEventListener("click", () => {
+        loadTrack(i);
+        audio.play();
+      });
+      listEl.appendChild(row);
+    });
+
+    loadTrack(0);
+
+    // Tema neón dinámico
+    const root = document.documentElement;
+    function setTheme(theme) {
+      root.classList.remove("theme-pink", "theme-blue", "theme-purple", "theme-red");
+      root.classList.add(`theme-${theme}`);
+    }
+    setTheme("pink");
+
+    document.querySelectorAll(".track-card").forEach(card => {
+      card.addEventListener("mouseenter", () => {
+        const t = card.dataset.theme;
+        if (t) setTheme(t);
+      });
+      card.addEventListener("mouseleave", () => {
+        setTheme("pink");
+      });
+    });
+  </script>
+</body>
+</html>

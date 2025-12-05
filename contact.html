@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto – Dieg8x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="fade-in-up">
+      <h3 class="section-eyebrow">Contacto</h3>
+      <h1 class="page-title">Booking, prensa & demos</h1>
+
+      <div class="contact-layout">
+        <div>
+          <div class="contact-card">
+            <div class="contact-field">
+              <label class="contact-label">Nombre</label>
+              <input class="contact-input" placeholder="Tu nombre completo">
+            </div>
+
+            <div class="contact-field">
+              <label class="contact-label">Correo electrónico</label>
+              <input class="contact-input" placeholder="tucorreo@mail.com">
+            </div>
+
+            <div class="contact-field">
+              <label class="contact-label">Tipo de solicitud</label>
+              <select class="contact-input">
+                <option>Booking</option>
+                <option>Prensa / Media</option>
+                <option>Demos / 8ight Records</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="contact-field">
+              <label class="contact-label">Mensaje</label>
+              <textarea class="contact-textarea" placeholder="Cuéntame más..."></textarea>
+            </div>
+
+            <button class="btn btn-primary">Enviar mensaje</button>
+            <p class="contact-helper">Este formulario aún no envía correos. Wix lo puede conectar automático.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-tag">Contacto directo</div>
+            <div class="card-title">Email</div>
+            <p><a href="mailto:dieg8x@8ightRecords.com">dieg8x@8ightRecords.com</a></p>
+
+            <div class="card-title" style="margin-top:22px;">Redes</div>
+            <p>
+              · Instagram: @dieg8x<br>
+              · TikTok: @dieg8x<br>
+              · YouTube: @Dieg8x
+            </p>
+
+            <div class="card-title" style="margin-top:22px;">Horarios</div>
+            <p>Lunes – Domingo · 24/7 (respuesta variable por shows).</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span>.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

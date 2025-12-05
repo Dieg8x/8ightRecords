@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>8ight Records – Label de Dieg8x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="8ight Records: sello y espacio creativo liderado por Dieg8x.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="section-alt fade-in-up">
+      <h3 class="section-eyebrow">Label</h3>
+      <h1 class="page-title">8ight Records</h1>
+      <p class="section-intro">
+        8ight Records es el sello y espacio creativo liderado por Dieg8x.
+        Un punto de encuentro para música urbana, electrónica y proyectos con visión a largo plazo.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <p>
+            El objetivo de 8ight Records no es solo lanzar tracks, sino construir
+            universos completos: sonido, imagen y narrativa alineados para cada artista.
+          </p>
+          <p>
+            Desde singles hasta proyectos más ambiciosos, el sello busca artistas que
+            entiendan tanto la pista como el momento íntimo: música que funciona en
+            un club, pero también en la habitación.
+          </p>
+          <p>
+            Los lanzamientos y sesiones se publican principalmente a través del canal:
+          </p>
+          <p style="margin-top:6px;">
+            <a href="https://www.youtube.com/@8ightRecords" target="_blank">YouTube · 8ight Records</a>
+          </p>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-tag">Qué buscamos</div>
+            <div class="card-title">Artistas & proyectos</div>
+            <p>
+              · Propuestas en reggaetón, urbano, house y techno.<br>
+              · Productores/as que cuiden tanto sonido como estética.<br>
+              · Colaboraciones para sesiones especiales y The Eight Sessions.
+            </p>
+            <p style="margin-top:8px;">
+              Para enviar demos o ideas de proyecto, usa el formulario de
+              <a href="contact.html">Contacto</a> y selecciona “Demos / 8ight Records”.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(e => {
+      e.forEach(x => { if (x.isIntersecting) { x.target.classList.add("visible"); observer.unobserve(x.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

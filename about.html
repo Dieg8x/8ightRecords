@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dieg8x – About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Quién es Dieg8x: DJ, productor y cantante de reggaetón, house, techno y trap.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="fade-in-up">
+      <h3 class="section-eyebrow">About</h3>
+      <h1 class="page-title">Quién es Dieg8x</h1>
+      <p class="section-intro">
+        Soy <strong>Dieg8x</strong>, DJ, productor y cantante de Ciudad de México.  
+        Mi proyecto nace de la idea de que la música no solo se escucha: se vive, se baila y se queda pegada en la memoria.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <p>
+            En mis sets y canciones mezclo influencias de <strong>reggaetón, house, techno y trap</strong>.  
+            Busco ese punto medio entre lo emocional y lo oscuro: temas que puedes bailar en un club,
+            pero también poner en repeat solo, con audífonos, mientras revisas chats y recuerdos.
+          </p>
+          <p>
+            He lanzado música en plataformas como
+            <a href="https://open.spotify.com/intl-es/artist/3rmaK40sMT4b1tKgIkOOgF" target="_blank"><strong>Spotify</strong></a>,
+            <a href="https://music.apple.com/mx/artist/dieg8x/1643347066" target="_blank"><strong>Apple Music</strong></a> y
+            <a href="https://www.youtube.com/@Dieg8x" target="_blank"><strong>YouTube</strong></a>,
+            con proyectos como <em>“BBY IT’S TIME”</em>, <em>“U.H.P.M.”</em>, <em>“CARA DE DIABLA”</em>,
+            <em>“A Escondidas”</em> y <em>“DIOSA”</em>.
+          </p>
+          <p>
+            Además de productor, soy fundador de <strong>8ight Records</strong>, un sello pensado para artistas que quieren
+            una propuesta sólida en estética, sonido y visión. No se trata solo de sacar rolas: se trata de construir un universo completo.
+          </p>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-tag">Highlights</div>
+            <div class="card-title">Lo que representa el proyecto</div>
+            <p>
+              · Fusión de urbano y electrónico.<br>
+              · Letras honestas sobre amor, deseo, caos y recuerdos.<br>
+              · Sets que pasan del perreo a momentos más introspectivos sin romper la vibra.<br>
+              · Una identidad visual minimalista, con toques neón y clima nocturno.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(e => {
+      e.forEach(x => { if (x.isIntersecting) { x.target.classList.add("visible"); observer.unobserve(x.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

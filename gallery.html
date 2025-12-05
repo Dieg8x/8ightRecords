@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galería – Dieg8x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Galería visual del artista Dieg8x. Fotos, sesiones, portadas y contenido destacado.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-left">
+      <div class="nav-logo-dot"></div>
+      <div class="nav-title">Dieg8x / Official Site</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="live.html">Live</a>
+      <a href="sessions.html">The Eight Sessions</a>
+      <a href="artists.html">Artists</a>
+      <a href="label.html">8ight Records</a>
+      <a href="merch.html">Merch</a>
+      <a href="gallery.html">Galería</a>
+      <a href="sets.html">Sets</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="presskit.html">Presskit</a>
+      <a href="bts.html">BTS</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="fade-in-up">
+      <h3 class="section-eyebrow">Galería</h3>
+      <h1 class="page-title">Fotos destacadas</h1>
+      <p class="section-intro">
+        Portadas, sesiones, fotos de shows y contenido visual del universo Dieg8x.
+      </p>
+
+      <div class="media-grid">
+        <div class="media-item">
+          <img src="img/gallery1.jpg" alt="Foto Dieg8x 1">
+          <div class="media-caption">Sesión rooftop – 2025</div>
+        </div>
+
+        <div class="media-item">
+          <img src="img/gallery2.jpg" alt="Foto Dieg8x 2">
+          <div class="media-caption">Behind the scenes – BBY IT’S TIME</div>
+        </div>
+
+        <div class="media-item">
+          <img src="img/gallery3.jpg" alt="Foto Dieg8x 3">
+          <div class="media-caption">Concepto visual – DIOSA</div>
+        </div>
+
+        <div class="media-item">
+          <img src="img/gallery4.jpg" alt="Foto Dieg8x 4">
+          <div class="media-caption">8ight Records – Visual Identity</div>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px;">Videos destacados</h2>
+
+      <div class="video-grid">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+          <div class="video-caption">Teaser The Eight Sessions</div>
+        </div>
+
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+          <div class="video-caption">Live Set – Dieg8x</div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> <span class="brand">Dieg8x</span> · 8ight Records.  
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const obs = new IntersectionObserver((e)=>{ e.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add("visible"); obs.unobserve(x.target);} })},{threshold:0.15});
+    document.querySelectorAll(".fade-in-up").forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>
